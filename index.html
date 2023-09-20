@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
-    <h1>My application</h1>
+    <nav>
+     <h1>My application</h1>
+     <a href="./login.html" id="link">Login</a>
+     <a href="./register.html" id="link">Register</a>
+     <a href="./products/products.html" id="link">Products</a>
+     <a href="./products/addProduct.html" id="link">Add</a>
+    </nav>
+    <div class="container">
+     <div class="col-md-4">
+      <h4>Add Products</h4>
+      <form id="product-from">
+        <div class="mb-3">
+          <input type="text" id="name" placeholder="Product Name">
+        </div>
+        <div class="mb-3">
+          <input type="number" id="price" step="0.01"   placeholder="Product Price" name ="autocomplete" >
+        </div>
+        <div class="mb-3">
+          <input type="number" id="amoung" placeholder="Product Amoung">
+        </div>
+        <input type="submit" value="Insertar" class="btn btn-info">
+      </form>
+     </div>
+     <div class="col-md-8">
 
-    <a href="./login.html">Login</a>
-    <a href="./register.html">Register</a>
-    <a href="./products/products.html">Products</a>
-    <a href="./products/addProduct.html">Add</a>
+     </div>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

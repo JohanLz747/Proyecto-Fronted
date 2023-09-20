@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace
+}
+
+body{
+    height: 100%;
+    background-image: url(../src/fondo-futurista2.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#signupform{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    background-color: #333;
+    width: 30%;
+    margin-top: 10%;
+    border: 1px solid color white;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    height: 22rem;
+    font-size: 18px;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #b38bff;
+}
+label{
+    top: 8px;
+    position: relative;
+    color: white;
+}   
+#boton{
+    padding: 10px;
+    background-color: #b38bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.2s ease-in-out;
+}
+p{
+    position: relative;
+    top: 10px;
+    color: white;
+}
+a{
+    color: #b38bff;
+    }
