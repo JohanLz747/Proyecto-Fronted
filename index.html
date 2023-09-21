@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Principal</title>
+    <link rel="stylesheet" href="./styles/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
@@ -11,29 +12,38 @@
      <h1>My application</h1>
      <a href="./login.html" id="link">Login</a>
      <a href="./register.html" id="link">Register</a>
-     <a href="./products/products.html" id="link">Products</a>
-     <a href="./products/addProduct.html" id="link">Add</a>
     </nav>
-    <div class="container">
-     <div class="col-md-4">
-      <h4>Add Products</h4>
-      <form id="product-from">
-        <div class="mb-3">
-          <input type="text" id="name" placeholder="Product Name">
-        </div>
-        <div class="mb-3">
-          <input type="number" id="price" step="0.01"   placeholder="Product Price" name ="autocomplete" >
-        </div>
-        <div class="mb-3">
-          <input type="number" id="amoung" placeholder="Product Amoung">
-        </div>
-        <input type="submit" value="Insertar" class="btn btn-info">
-      </form>
-     </div>
-     <div class="col-md-8">
 
-     </div>
-    </div>
+
+
+    <div class="container">
+      <div class="row pt-5" id="app">
+       <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+           <h4>Add Products</h4>
+          </div> 
+
+          <form id="product-from" class="card-body">
+            <div class="form-group mb-3">
+             <input type="text" id="name" placeholder="Product Name" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+             <input type="number" id="price" step="0.01"   placeholder="Product Price"  class="form-control" >
+            </div>
+            <div class="form-group">
+             <input type="number" id="amoung" placeholder="Product Amoung" class="form-control">
+            </div>          
+            <input type="submit" value="Insertar" class="btn btn-info mt-4 form-control">
+          </form>
+        </div>
+        
+       </div>
+       <div class="col-md-8" id="product-list">
+        <h4>List Product</h4>
+       </div>
+      </div>
+    </div> 
     <script src="./js/index.js"></script>
   </body>
 </html>
