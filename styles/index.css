@@ -15,3 +15,9 @@ body {
 #product-list{
     color: white;
 }
+
+#logout{
+    display: flex;
+    padding: 5px;
+    margin-top: 30rem;
+}

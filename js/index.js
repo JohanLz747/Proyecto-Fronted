@@ -1,19 +1,3 @@
-
-/*index
-const user = JSON.parse(localStorage.getItem('login_success')) || false
-if(!user){
-    window.location.href = 'login.html'
-}
-
-const logout = document.querySelector('#logout')
-
-logout.addEventListener('click', ()=>{
-    alert('Hasta pronto!')
-    localStorage.removeItem('login_success')
-    window.location.href = 'login.html'
-})
-*/
-
 class Product {
     constructor(name, price , amoung) {
         this.name = name;
@@ -59,7 +43,7 @@ class UI {
         setTimeout(function () {
           document.querySelector(".alert").remove();
         }, 2000);
-      }
+      }    
     }
 
 
@@ -76,7 +60,7 @@ document.getElementById('product-from')
         const ui = new UI();
         ui.addProduct(product);
         ui.showMessage('saved product','success');
-        document.getElementById('product-from').reset();/*reset form*/
+        document.getElementById('product-from').reset()/*reset form*/
         
          /*message*/
         e.preventDefault();
@@ -88,4 +72,17 @@ document.getElementById('product-from')
     const ui = new UI(); 
     ui.deleteProduct(e.target);
 
+ })
+
+ const user = JSON.parse(localStorage.getItem('login_success')) || false
+ if(!user){
+     window.location.href = 'login.html'
+ }
+ 
+ const logout = document.querySelector('#logout')
+ 
+ logout.addEventListener('click', ()=>{
+     alert('Hasta pronto!')
+     localStorage.removeItem('login_success')
+     window.location.href = 'login.html'
  })
