@@ -21,3 +21,11 @@ body {
     padding: 5px;
     margin-top: 30rem;
 }
+
+nav{
+    color: white;
+    background-color: aqua;
+}
+h1{
+    color: white;
+}
